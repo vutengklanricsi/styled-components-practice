@@ -4,9 +4,9 @@ import styled, { css } from "styled-components";
 import { FadeIn } from "./styled";
 
 const StyledButton = styled.button`
-  background-color: white;
-  color: palevioletred;
-  font-size: 1.2rem;
+  background-color: ${props => props.theme.colors.light};
+  color: ${props => props.theme.colors.main};
+  font-size: ${props => props.theme.fontSizes.p};
   margin: ${({ margin }) => (margin ? margin : "2rem")};
   padding: 0.5rem 1rem;
   border: 1px solid palevioletred;
@@ -27,6 +27,11 @@ const StyledButton = styled.button`
   &.someClass {
     color: blue;
   }
+
+	@media ${({theme}) => theme.mediaQueries.bellow786} {
+		font-size: 0.4rem;
+		color: blue; 
+	}
 `;
 
 const OutterWrapper = styled.div`
