@@ -13,8 +13,8 @@ const MainWrapper = styled.section`
 function App() {
   return (
     <MainWrapper>
-      <Button primary>My primary Button</Button>
-      <Button >My Button</Button>
+      <Button primary bgColor='violet'>My primary Button</Button>
+      <Button>My Button</Button>
     </MainWrapper>
   );
 }
