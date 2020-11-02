@@ -24,7 +24,7 @@ const PaginationWrapper = styled.div`
   }};
 `;
 
-const Link = styled.a.attrs(props => ({
+const Link = styled.a.attrs(() => ({
   target: '_blank'
 }))`
   color: violet;
