@@ -24,6 +24,11 @@ const PaginationWrapper = styled.div`
   }};
 `;
 
+const Link = styled.a`
+  color: violet;
+  font-size: 1.5rem;
+`;
+
 function App() {
   return (
     <MainWrapper>
@@ -33,6 +38,12 @@ function App() {
         <Button>Page 2</Button>
         <Button>Page 4</Button>
       </PaginationWrapper>
+      <Link href="https://google.com" target="_blank">
+        One link
+      </Link>
+      <Link href="https://google.com" target="_blank">
+        Another link
+      </Link>
     </MainWrapper>
   );
 }
