@@ -28,7 +28,7 @@ const StyledButton = styled.button`
     color: blue;
   }
 
-	@media ${({theme}) => theme.mediaQueries.bellow786} {
+	@media ${(props) => props.theme.mediaQueries.bellow786} {
 		font-size: 0.4rem;
 		color: blue; 
 	}
